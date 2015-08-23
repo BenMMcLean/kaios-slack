@@ -1,0 +1,70 @@
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-size: 10px;
+      font-family: sans-serif;
+      background-color: #fff;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+body {
+  font-size: 1rem;
+  background: #fff;
+}
+
+h1, h2 {
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+#error {
+  color: #f00;
+  font-family: monospace;
+  transition: all 1s;
+}
+
+form {
+  display: flex;
+}
+
+input, button, code, p {
+  font-size: inherit;
+}
+
+section[role="region"] {
+  height: 100%;
+  line-height: 1em;
+  font-size: 2.2rem;
+}
+
+div[role="main"] {
+  background: #eee;
+  height: 100%;
+  overflow: hidden;
+}
+
+div[role="main"] p {
+  margin: 2rem 2.5rem;
+}
+
+#feed {
+  overflow:hidden; height:590px; background:#fff; width:100%; position:absolute; top:30px; left:0px;
+}
+#messages {
+  padding-top:30px;
+  height:510px;
+  overflow:scroll;
+}
+
+#messages div {
+  border-top:1px solid #ccc;
+  font-size:1rem;
+}
+
+#send {
+  background:#ccc; height:60px;
+}

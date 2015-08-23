@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Slack</title>
+        <meta name="description" content="A slack client">
+
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/app.css">
+        <script type="text/javascript" src="js/app.js" defer></script>
+        <link href="css/headers.css" rel="stylesheet" type="text/css">
+        <link href="css/drawer.css" rel="stylesheet" type="text/css">
+        <link href="css/input_areas.css" rel="stylesheet" type="text/css">
+        <link href="css/gaia-icons-embedded.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <div>
+        <section data-type="sidebar">
+          <header>
+            <menu type="toolbar">
+              <a href="#content"><span class="icon-bookmark" style="font-family:gaia-icons"></span></a>
+            </menu>
+            <h1>Channels</h1>
+          </header>
+          <nav>
+            <ul id="channels">
+              
+            </ul>
+            <h2>Direct Messages</h2>
+            <ul id="users">
+            </ul>
+          </nav>
+        </section>
+        <section id="drawer" role="region">
+          <header>
+            <a href="#content"><span class="icon-menu" style="font-family:gaia-icons"></span></a>
+            <a href="#drawer"><span class="icon-menu" style="font-family:gaia-icons"></span></a>
+            <h1 id="current">Slack</h1>
+            <div id="refresh" class="icon-browser-reload" style="position:absolute; top:5px; right:5px; z-index:100; font-family:gaia-icons"></div>
+          </header>
+          <div role="main">
+            <section id="feed">
+
+                <div id="messages">
+                </div>
+
+                <div id="send">
+                    <form id="post-to-channel" action="#">
+                        <input id="postmessage" type="text" placeholder="Send a message" required="">
+                    </form>
+                </div>
+
+            </section>
+          </div>
+        </section>
+        </div>
+
+    </body>
+</html>
+

@@ -1,7 +1,7 @@
 {
   "version": "0.2.0",
   "name": "slack",
-  "description": "Demonstrates how to use permissions to load remote content",
+  "description": "A simple slack client",
   "launch_path": "/index.html",
   "icons": {
     "16": "/img/icons/icon16x16.png",
@@ -10,28 +10,20 @@
     "128": "/img/icons/icon128x128.png"
   },
   "developer": {
-    "name": "Your name",
-    "url": "http://example.com"
+    "name": "Stephen Young",
+    "url": "http://hownowstephen.com"
   },
   "type": "privileged",
   "permissions": {
     "systemXHR": {
       "description": "Required to load remote content"
-    }
+    },
+    "device-storage:apps":{ "access": "readwrite" },
+    "webapps-manage":{ }
   },
   "installs_allowed_from": [
     "*"
   ],
-  "locales": {
-    "es": {
-      "name": "Aplicación privilegiada",
-      "description": "Demuestra cómo utilizar permisos para cargar contenido remoto",
-      "permissions": {
-        "systemXHR": {
-          "description": "Requerido para cargar contenido remoto"
-        }
-      }
-    }
-  },
+  "locales": {},
   "default_locale": "en"
 }
